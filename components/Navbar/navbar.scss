@@ -1,0 +1,119 @@
+@use "../../styles/variables" as v;
+
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 3rem;
+  font-size: 2.5rem;
+  background: #ffffff;
+  background-size: 4px 4px;
+
+  &__logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: v.$text-primary-color;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__close {
+    display: block;
+    margin: 2rem 2rem 4rem auto;
+    cursor: pointer;
+  }
+
+  &__toggle {
+    cursor: pointer;
+  }
+
+  &__menu {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: v.$section-secondary-color;
+    transition: transform 0.3s;
+    transform: translateX(100%);
+
+    &.show {
+      transform: translateX(0);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: v.$text-primary-color;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: v.$link-hover-color;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    &__menu {
+      left: initial;
+      width: 50vw;
+    }
+
+    &::before {
+      display: none;
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background: rgba(50, 50, 93, 0.75);
+    }
+
+    &.show::before {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      background: radial-gradient(rgba(0, 0, 0, 0) 1px, #fdfdfd 1px);
+      backdrop-filter: blur(3px);
+      padding-inline: 4rem;
+    }
+
+    &__menu {
+      position: initial;
+      width: initial;
+      transform: initial;
+    }
+
+    &__list {
+      flex-direction: row;
+      font-size: 1.7rem;
+    }
+
+    &__close {
+      display: none;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  scrollbar-color: #34495e #fff;
+  scrollbar-width: thin;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 90px;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 90px;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  scroll-snap-align: start;
+}
