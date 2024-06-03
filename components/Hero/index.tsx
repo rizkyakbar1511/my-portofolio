@@ -48,6 +48,9 @@ export default function Hero() {
                 <Image src="/html.png" alt="icon-html" fill />
               </li>
               <li className="hero__tech-stack-item">
+                <Image src="/css.png" alt="icon-html" fill />
+              </li>
+              <li className="hero__tech-stack-item">
                 <Image src="/javascript.png" alt="icon-javascript" fill />
               </li>
               <li className="hero__tech-stack-item">
