@@ -1,4 +1,4 @@
-@use "../../styles/variables" as v;
+@use "@/sass/abstracts" as v;
 
 .nav {
   position: fixed;
@@ -37,7 +37,7 @@
     position: fixed;
     inset: 0;
     z-index: 2;
-    background-color: v.$section-secondary-color;
+    background-color: v.$section-bg-color;
     transition: transform 0.3s;
     transform: translateX(100%);
 

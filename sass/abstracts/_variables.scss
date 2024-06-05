@@ -1,0 +1,10 @@
+@use "colors" as c;
+
+$section-bg-color: c.$white;
+$link-hover-color: c.$blue;
+
+$text-primary-color: c.$black;
+$text-secondary-color: c.$black-400;
+$text-tertiary-color: c.$gray;
+
+$box-shadow-pixel: -6px 0 0 0 c.$white, 6px 0 0 0 c.$white, 0 -6px 0 0 c.$white, 0 6px 0 0 c.$white;

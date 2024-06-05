@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Pixelify_Sans } from "next/font/google";
-import "./globals.scss";
+import "@/sass/main.scss";
 
 const pixelify = Pixelify_Sans({
   subsets: ["latin"],

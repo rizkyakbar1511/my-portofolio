@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 90px;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 90px;
+}
+
+section {
+  scroll-snap-align: start;
+}

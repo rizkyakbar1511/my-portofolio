@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import "./hero.scss";
 import usePlaySound from "@/hooks/usePlaySound";
 
 export default function Hero() {
@@ -45,34 +44,69 @@ export default function Hero() {
             <h1 className="hero__tech-stack-title">Tech Stack</h1>
             <ul className="hero__tech-stack-list">
               <li className="hero__tech-stack-item">
-                <Image src="/html.png" alt="icon-html" fill />
+                <Image
+                  src="/html.png"
+                  alt="icon-html"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </li>
               <li className="hero__tech-stack-item">
-                <Image src="/css.png" alt="icon-html" fill />
+                <Image src="/css.png" alt="icon-html" fill sizes="(max-width: 768px) 100vw, 33vw" />
               </li>
               <li className="hero__tech-stack-item">
-                <Image src="/javascript.png" alt="icon-javascript" fill />
+                <Image
+                  src="/javascript.png"
+                  alt="icon-javascript"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </li>
               <li className="hero__tech-stack-item">
-                <Image src="/typescript.png" alt="icon-typescript" fill />
+                <Image
+                  src="/typescript.png"
+                  alt="icon-typescript"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </li>
               <li className="hero__tech-stack-item">
-                <Image src="/nextjs.png" alt="icon-next-js" fill />
+                <Image
+                  src="/nextjs.png"
+                  alt="icon-next-js"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </li>
               <li className="hero__tech-stack-item">
-                <Image src="/react.png" alt="icon-react" fill />
+                <Image
+                  src="/react.png"
+                  alt="icon-react"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </li>
               <li className="hero__tech-stack-item">
-                <Image src="/tailwind.png" alt="icon-tailwind" fill />
+                <Image
+                  src="/tailwind.png"
+                  alt="icon-tailwind"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </li>
               <li className="hero__tech-stack-item">
-                <Image src="/sass.png" alt="icon-sass" fill />
+                <Image
+                  src="/sass.png"
+                  alt="icon-sass"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </li>
             </ul>
           </div>
         </div>
         <div className="hero__img">
-          <Image src="/hero.jpg" alt="hero" fill />
+          <Image src="/hero.jpg" alt="hero" fill sizes="(max-width: 768px) 100vw, 33vw" priority />
         </div>
       </div>
       <audio ref={audioRef} src="/hover.wav" preload="auto" hidden />

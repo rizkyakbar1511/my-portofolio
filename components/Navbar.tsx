@@ -2,10 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import usePlaySound from "@/hooks/usePlaySound";
-import "./navbar.scss";
-
 import classNames from "classnames";
+import usePlaySound from "@/hooks/usePlaySound";
 
 export default function Navbar() {
   const [isShowMenu, setIsShowMenu] = React.useState(false);
